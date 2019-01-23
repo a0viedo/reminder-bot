@@ -1,0 +1,24 @@
+{
+  "name": "reminder-bot",
+  "version": "1.0.0",
+  "description": "Reminds you of things",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "reminder",
+    "bot"
+  ],
+  "author": "Alejandro Oviedo <alejandro.oviedo.g@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^1.36.1",
+    "serverless-pseudo-parameters": "^2.4.0"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

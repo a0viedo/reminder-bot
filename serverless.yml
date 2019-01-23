@@ -1,0 +1,17 @@
+service: reminder-bot
+
+provider:
+  name: aws
+  stage: ${opt:stage, env:NODE_ENV, "dev"}
+  runtime: nodejs8.10
+  memorySize: 128
+  timeout: 120
+  environment: ${file(./config/env.${self:provider.stage}.yml)}
+plugins:
+  - serverless-pseudo-parameters
+
+functions:
+  remind:
+    handler: index.handler
+    events:
+      - schedule: cron(${self:provider.environment.CRON})
