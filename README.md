@@ -1,5 +1,5 @@
 # reminder-bot
-It's a serverless project that allows you to configure reminders on your Slack team that are able to utilize @here or @channel.
+It's a serverless project that allows you to configure reminders on your Slack team that are able to utilize **@here** or **@channel**.
 
 ## Setup
 Create a file within the `config` directory (e.g. env.test.yaml) with your especific parameters. An example of a configuration file would look like this:
